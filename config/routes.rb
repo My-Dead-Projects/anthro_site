@@ -4,7 +4,12 @@ AnthroSite::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
-
+  
+  get '/home', to: 'pages#home'
+  get '/help', to: 'pages#help'
+  get '/about', to: 'pages#about'
+  get '/contact', to: 'pages#contact'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
